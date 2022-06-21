@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../styles/joblist.css';
 import JobListItem from './JobListItem';
 import data from '../utils/data.json';
-import bgImage from './images/bg-header-desktop.svg';
 
 export default function JobList() {
   const [joblistdata,setJoblistdata] = useState(data);
@@ -39,7 +38,7 @@ export default function JobList() {
       <img 
         alt='bgimage'
         style={{width:'100%'}}
-        src={bgImage}
+        src={'./images/bg-header-desktop.svg'}
       />
       {joblistdata.map((item) => 
         <JobListItem

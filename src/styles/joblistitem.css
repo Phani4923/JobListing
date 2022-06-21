@@ -7,19 +7,20 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
 }
 
 .details{
     padding: 1rem;
     display: flex;
-    flex: .5;
+    flex: .6;
     align-items: center;
     justify-content: space-around;
 }
 
 .logo{
     flex: 1;
+    margin: 1rem 1.5rem;
 }
 
 .additionalDetails{
@@ -79,10 +80,20 @@
 }
 
 @media screen and (max-width:960px){
-    .details,.joblistitem{
+    .joblistitem{
         flex-direction: column;
+    }
+    .details{
+        border-bottom: 1px solid black;
+        margin-bottom: 1rem;
     }
     .languages{
         justify-content: center;
+        margin: 1rem 0rem;
+    }
+}
+@media screen and (max-width:600px){
+    .details{
+        flex-direction: column;
     }
 }

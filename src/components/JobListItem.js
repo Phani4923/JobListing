@@ -4,8 +4,6 @@ import '../styles/joblistitem.css'
 export default function JobListItem(props) {
 
   const {item} = props;
-  console.log(item);
-  const logo = item.logo
 
   return (
     <div 
@@ -15,7 +13,7 @@ export default function JobListItem(props) {
         <div className='details'>
           <img 
             className='logo'
-            src ={logo} 
+            src ={item.logo} 
             alt={item.company}
           />
           <div className='company-details'>

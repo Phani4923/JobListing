@@ -21,15 +21,17 @@ export default function JobListItem(props) {
               <span className='companyName'>
                 {item.company}
               </span>
-              {item.new && <span className='newsTag'>News</span>}
-              {item.featured && <span className='featureTag'>Feature</span>}
+              {item.new && <span className='newsTag'>NEW!</span>}
+              {item.featured && <span className='featureTag'>FEATURED</span>}
             </div>
             <div className='position'>
               <span>{item.position}</span>
             </div>
             <div className='additionalDetails'>
               <span>{item.postedAt}</span>
+              <span className='dot'></span>
               <span>{item.contract}</span>
+              <span className='dot'></span>
               <span>{item.location}</span>
             </div>
           </div>

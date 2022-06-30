@@ -4,7 +4,7 @@ function App() {
   return (
     <div 
       className="App"
-      style={{height:'100%', width:'100%'}}  
+      style={{height:'100%', width:'100%',backgroundColor: 'rgb(239 250 250)'}}  
     >
       <JobList />
     </div>

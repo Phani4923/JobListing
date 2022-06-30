@@ -8,7 +8,7 @@ export default function JobListItem(props) {
   return (
     <div 
       className='joblistitem'
-      style={item.featured?{'borderLeft': '7px solid rgb(100, 161, 158)'}:{}}
+      style={item.featured?{'borderLeft': '5px solid rgb(100, 161, 158)'}:{}}
     >
         <div className='details'>
           <img 
